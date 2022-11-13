@@ -1,12 +1,15 @@
 ﻿{
   "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:54127",
+      "applicationUrl": "http://localhost:54127",  //If want to change port, change from here.
       "sslPort": 0
     }
   },
+
+  ///When we run our Application, we are using any one of the below profiles.
+
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
@@ -15,6 +18,8 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+
+    //If we run our app using Kestrel and not using IIS Express, then below settings are launched.
     "ShahzaibBooksStore": {
       "commandName": "Project",
       "launchBrowser": true,
